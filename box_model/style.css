@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The one difference between the border-box is that it accounts for the content width, padding, and the border. It excepts the margin ..
+    
+    ON the other hand, the content-box border sizing is different. It only accounts for the length of hte content. e.g when we set the width to 400px, the content alone takes the whole 400px
+    */
+}
+
+
+h1 {
+    border: 2px dashed crimson;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+p {
+    margin: 2em 3em 3em 4em;
+    /* The default moves from top, right, bottom, and then left */
+    /* Two values provided applies to both top/bottom and then right/left */
+}
+
+.container {
+    border: 10px double red;
+    font-size: 1.5rem;
+    margin: 1.5em;
+    padding: 1.5em;
+    outline: 5px solid purple;
+    outline-offset: -15px;
+}
+
+/* To make a box circle we use the border-radius styling and set it to 50% of the specified width... */

@@ -1,0 +1,45 @@
+/* Universal selector */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+p{
+    font-size: 22px;
+    color: purple;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+/* Putting a comma between differenct selectors just stles multiple elements with the specified selector */
+ h1 h2 {
+    columns: 2;
+    /* This selector just apply to a h2 which is only nested inside h1 */
+ }
+
+ /* p span {
+    text-transform: uppercase;
+    color: rgb(151, 191, 240);
+    /* font-weight: bold; 
+    font-style: italic;
+ } */
+
+ .highlight {
+    text-transform: uppercase;
+    color: rgb(151, 191, 240);
+    /* font-weight: bold; */
+    font-style: italic;
+ }
+
+ /*  when we set styles in the body, they are inherited for every element except for the form element that is 
+  * The button
+  * input
+  * textarea
+  * select
+  in this case we have to explictly inherit styles from other parts of the code
+  button, input, textarea, select {
+    font: inherit;
+  }
+   */

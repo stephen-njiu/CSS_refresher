@@ -1,0 +1,68 @@
+/* Import the font at the top of hte page.... */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Roboto can be used with san-serif, together with Tahoma, Geneva */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type: disc;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    /* Color changes the bullets points and also the text */
+    line-height: 1.6;
+    list-style-image: url(dollars-499481_960_720.jpg) square;
+}
+
+/* Task, in the unordered list, please change the second element color to red while keeping all the others with the default color
+in this task, we used pseudo element li:nth-child()
+*/
+
+ul li:nth-child(odd) {
+    color: red;
+}
+
+ul ::marker {
+    /* A space must exist between the two individual elements ul ::marker */
+    color: crimson;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >> ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

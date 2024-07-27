@@ -1,0 +1,110 @@
+/* Import the font at the top of hte page.... */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Roboto can be used with san-serif, together with Tahoma, Geneva */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* VARIABLES */
+:root {
+    --BGCOLOR: #475569;
+    --ALT-BGCOLOR: #132938;
+}
+
+
+body {
+    font: 1.5rem "Roboto", sans-serif;
+    min-height: 100vh;
+    background-color:var(--BGCOLOR);
+    background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: rgb(59, 57, 57);
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 20x solid #000;
+
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+
+
+/* Media Queries */
+
+/* Small */
+@media screen and (min-width: 576px) {
+    body {
+        background-color:var(--ALT-BGCOLOR);
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav {
+        display: none;
+    }
+}
+/* Medium */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+}
+/* Large */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+}
+/* XL */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple); 
+    }
+}
+/* XL */
+@media screen and (min-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+

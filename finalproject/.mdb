@@ -1,0 +1,9 @@
+{
+  "projectName": "tacoshop",
+  "meta": {
+    "type": "frontend"
+  },
+  "packageManager": "npm",
+  "hash": "fcad95f4",
+  "domain": "tacoshop.mdbgo.io"
+}

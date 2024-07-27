@@ -1,0 +1,36 @@
+body {
+    background-color: papayawhip;
+}
+
+p {
+    font-size: 16px; 
+    /* The default browser size of text */
+}
+
+
+p {
+    width: 50ch;
+    /* # this ensures that the width of each line is approximately 50 characters of words */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    rem refers to the size of the root element (the browser font) and it's the preferred element to em
+    px on the other hand does not allow for flexiblity when the user changes the browser settings. Should not be used in the body, html/ main tags
+    
+    Using a rem on the parent and then an em on the child elements brings some confusion and unintended styling since em will build relative to the rem.
+
+    em is mostly used for margin / padding of elements such as buttons, headers, etc. in most cases, the font-size is set using the rem and the margin/padding is set using the em.
+
+*/
+

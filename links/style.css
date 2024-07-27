@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    cursor: pointer;
+    color: #000;
+    color: hsl(244, 84%, 64%, 0.9);
+
+}
+/* Sudo class for styling after/before certain states... */
+
+/* a:visited {
+    color: purple;
+    /*  In some cases, we have NO need for visited links styling..., not necessary
+} */
+
+a:hover, a:focus {
+    color: dodgerblue;
+}
+a:active {
+    color: red;
+}
